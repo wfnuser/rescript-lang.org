@@ -31,7 +31,7 @@ ReScript 清楚地将这四种不同用途的 JS 对象的绑定方式区分开�
 
 If your JavaScript object has fixed fields, then it's conceptually like a ReScript record. Since a ReScript record compiles to a clean JavaScript object, you can definitely type a JS object as a ReScript record!
 
-如果你的 JavaScript 对象有固定的字段，那么从概念上来说它和 ReScript 的记录是相似的。既然一个 ReScript 记录可以编译到纯净的 JavaScript 对象，你当然也可以把一个 JS 对象当作一个 ReScript 的记录。
+如果你的 JavaScript 对象有固定的字段，那么从概念上来说它和 ReScript 的记录是相似的。既然一个 ReScript 记录可以编译到纯净的 JavaScript 对象，你当然也可以把一个 JS 对象当作一个 ReScript 的记录！
 
 <CodeTab labels={["ReScript", "JS Output"]}>
 
@@ -60,7 +60,7 @@ External 的相关文档在[这](external.md)。`@module` 的相关文档在[这
 
 If you want or need to use different field names on the ReScript and the JavaScript side, you can use the `@as` decorator:
 
-如果你想要或者需要在 ReScript 和 JavaScript 侧采用用不同的字段名，你可以用 `@as` 装饰器。
+如果你想要或者需要在 ReScript 和 JavaScript 侧采用用不同的字段名，你可以用 `@as` 装饰器：
 
 <CodeTab labels={["ReScript", "JS Output"]}>
 
@@ -85,7 +85,7 @@ This is useful to map to JavaScript attribute names that cannot be expressed in 
 
 It is also possible to map a ReScript record to a JavaScript array by passing indices to the `@as` decorator:
 
-通过使用 `@as` 装饰器传递索引，将 ReScript 的记录映射为 JavaScript 的数组也是可行的。
+通过使用 `@as` 装饰器传递索引，将 ReScript 的记录映射为 JavaScript 的数组也是可行的：
 
 <CodeTab labels={["ReScript", "JS Output"]}>
 
@@ -112,7 +112,7 @@ var value = [
 
 Alternatively, you can use [ReScript object](object.md) to model a JS object too:
 
-除此之外，你也可以使用 [ReScript 对象](object.md) 去对 JS 对象进行建模。
+除此之外，你也可以使用 [ReScript 对象](object.md) 去对 JS 对象进行建模：
 
 <CodeTab labels={["ReScript", "JS Output"]}>
 
